@@ -14,6 +14,10 @@
 ## Installation
 
 ```bash
-// npm
+git clone https://github.com/habibiazmi123/warehouse.git
+cd warehouse
 npm install
+npm run start
+
+after that open http://localhost:3000 in your browser
 ```
