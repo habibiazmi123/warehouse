@@ -36,7 +36,7 @@ export default function WarehouseDetail() {
         const response = await fetch(`https://api.belajartableau.com/api/WarehouseReps/${warehouseId}`);
         const result = await response.json();
         
-        if(result?.status) return navigate('/404');
+        if(result?.status === 404) return navigate('/404');
 
         setRecord(result);
         setIsLoading(false);
